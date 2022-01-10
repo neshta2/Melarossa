@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 public class Atm {
     private Card card;
 
-
     public Atm(Card card) {
         this.card = card;
     }

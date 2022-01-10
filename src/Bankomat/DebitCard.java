@@ -3,7 +3,6 @@ import java.math.BigDecimal;
 
 public class DebitCard extends Card{
 
-
     public DebitCard(String name) {
         super(name);
     }
