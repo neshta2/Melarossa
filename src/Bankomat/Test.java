@@ -9,6 +9,7 @@ public class Test {
 
         Atm atm = new Atm(card2);
 
+
         atm.subtractBalance(new BigDecimal("45644888"));
 
 
