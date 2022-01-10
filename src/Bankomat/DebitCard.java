@@ -16,7 +16,6 @@ public class DebitCard extends Card{
         if (balance.compareTo(money) >= 0) {
             balance = balance.subtract(money);
         } else {
-
             throw new InsufficientFundsException("Нe достаточно средств");
         }
     }
