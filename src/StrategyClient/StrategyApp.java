@@ -9,7 +9,7 @@ public class StrategyApp {
         sortStrategy.execute(arr0);
 
         int[] arr1={3,-8,2,0,33,1,3,2}; //Сортировка пузырьком
-        sortStrategy.sortSrategy(new BubbleSort());
+        sortStrategy.sortSrategy(new MetodsSort());
         sortStrategy.execute(arr1);
 
         /*int[] arr2={11,4,2,7,8,54};
@@ -18,18 +18,6 @@ public class StrategyApp {
         */
     }
 
-}
-
-class Sorter {
-    Sorting srategy;
-
-    public void sortSrategy(Sorting srategy) {
-        this.srategy = srategy;
-    }
-
-    public void execute(int[] arr) {
-        srategy.sort(arr);
-    }
 }
 
 interface Sorting {
