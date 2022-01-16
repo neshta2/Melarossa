@@ -2,7 +2,7 @@ package StrategyClient;
 
 import java.util.Arrays;
 
-class BubbleSort implements Sorting{
+public class BabbleSort implements Sorting{
     public void sort(int[] arr){
         System.out.println("Sort - пузырьком");
         System.out.println("до:\t"+ Arrays.toString(arr));
@@ -18,23 +18,7 @@ class BubbleSort implements Sorting{
         System.out.println("после:\t"+Arrays.toString(arr));
     }
 }
-class SelectionSort implements Sorting{
-    public void sort(int[] arr){
-        System.out.println("Sort - выборками");
-        System.out.println("до:\t"+ Arrays.toString(arr));
-        for (int barier=0; barier<arr.length-1; barier++){
-            for (int i=barier+1;i<arr.length;i++){
-                if(arr[i]<arr[barier]){
-                    int tmp=arr[i];
-                    arr[i]=arr[barier];
-                    arr[barier]=tmp;
-                }
-            }
-        }
-        System.out.println("после:\t"+Arrays.toString(arr));
-    }
-}
-/*class InsertingSort implements Sorting{
+ /*class InsertingSort implements Sorting{
     public void sort(int[] arr){
         System.out.println("Sort - вставками");
         System.out.println("до:\t"+ Arrays.toString(arr));

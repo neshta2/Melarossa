@@ -1,6 +1,6 @@
 package StrategyClient.Test;
 
-import StrategyClient.MetodsSort;
+import StrategyClient.BabbleSort;
 import StrategyClient.SelectionSort;
 import StrategyClient.Sorter;
 import org.junit.Test;
@@ -17,7 +17,7 @@ public class StrategyAppTest {
         sortStrategy.execute(arr0);
 
         int[] arr1={3,-8,2,0,33,1,3,2}; //Сортировка пузырьком
-        sortStrategy.sortSrategy(new MetodsSort());
+        sortStrategy.sortSrategy(new BabbleSort());
         sortStrategy.execute(arr1);
     }
 }
